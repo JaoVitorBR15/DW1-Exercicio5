@@ -16,17 +16,23 @@
 
     <main>
         <section>
-            <label for="inputGrande">Veículo Grande </label>
+            <label for="inputEntrada">Data e Hora de Entrada (Check-in):</label>
+            <input type="datetime-local" id="inputEntrada">
+            <br>
+            <label for="inputSaida">Data e Hora de Saída (Check-out):</label>
+            <input type="datetime-local" id="inputSaida">
+            <br>
+            <label for="inputGrande">Veículo de grande porte (Adicional 25%)</label>
             <input type="checkbox" id="inputGrande">
             <br>
-            <label for="inputFrequente">Cliente Frequente </label>
+            <label for="inputFrequente">Cliente frequente (Desconto 5%)</label>
             <input type="checkbox" id="inputFrequente">
-            <br>
-            <label for="inputHoras">Tempo (em horas): </label>
-            <input type="number" id="inputHoras">
             <br><br>
             <button onclick="Calcular()">Calcular</button>
             <br><br>
+            <label for="spanTempo">Tempo total cobrado: </label>
+            <span id="spanTempo"></span>
+            <br>
             <label for="spanValor">Valor Total: </label>
             <span id="spanValor"></span>
         </section>
